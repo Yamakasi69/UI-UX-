@@ -1,0 +1,128 @@
+:root{
+  --default-color: #333
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+
+  background-image: url('../img/background.jpg');
+  background-size: 100%;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+header{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h2, h3, h4, p{
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  display: flex;
+  gap: 24px;
+}
+
+.header-img{
+  width: calc(100%);
+  color: #2D353C;
+  object-fit: cover;
+  height: 200px;
+  filter: invert(21%) sepia(10%) saturate(685%) hue-rotate(166deg) brightness(95%) contrast(99%);
+}
+
+.logo-display{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.logo-display > img{
+  max-width: 400px;
+  object-fit: contain;
+}
+
+.heading-nav{
+  width: calc(100% - 24px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 12px;
+
+  background: var(--default-color);
+}
+
+.about-container{
+  max-width: 80vw;
+  margin-top: 24px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  
+  background-color: var(--default-color);
+}
+
+a{
+  color: white;
+}
+
+main{
+  width: 80%;
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 64px;
+  margin-top: 24px;
+}
+
+.mod-item{
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 1;
+  overflow: hidden;
+  padding: auto;
+}
+
+.mod-item > img{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.mod-data{
+  padding: 12px;
+  background-color: #000000a2;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
